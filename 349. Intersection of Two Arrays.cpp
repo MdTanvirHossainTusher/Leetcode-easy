@@ -1,4 +1,4 @@
-// TC=O(n+m), O(3*n)
+// TC=O(n+m), MC=O(3*n)
 class Solution {
 public:
     vector<int> intersection(vector<int>& nums1, vector<int>& nums2) {
@@ -15,7 +15,7 @@ public:
     }
 };
 
-// TC=O(n+m), O(3*n)
+// TC=O(n+m), MC=O(3*n)
 class Solution {
 public:
     vector<int> intersection(vector<int>& nums1, vector<int>& nums2) {
