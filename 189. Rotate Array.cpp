@@ -38,7 +38,7 @@ class Solution
 public:
     vector<int> reverseArray(int l, int r, vector<int> &nums)
     {
-        while (l < r)
+        while (l <= r)
         {
             swap(nums[l], nums[r]);
             l++;
