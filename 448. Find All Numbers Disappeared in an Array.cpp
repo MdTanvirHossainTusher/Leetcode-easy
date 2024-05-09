@@ -21,3 +21,26 @@ public:
     }
 };
 
+
+// https://youtu.be/8i-f24YFWC4?si=edavH4UGzEGTvPSB
+// TC = MC: O(n)
+class Solution {
+public:
+    vector<int> findDisappearedNumbers(vector<int>& nums) {
+        unordered_set<int> s;
+        vector<int> ans;
+        int n = nums.size();
+        for(int i = 1; i <= n; i++) {
+            s.insert(i);
+        }
+        for(int i = 0; i < n; i++) {
+            if (s.count(nums[i])) {
+                s.erase(nums[i]);
+            }
+        }
+        for(auto x: s) {
+            ans.push_back(x);
+        }
+        return ans;
+    }
+};
